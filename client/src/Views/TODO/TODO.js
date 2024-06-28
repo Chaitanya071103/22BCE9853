@@ -64,7 +64,7 @@ export function TODO(props) {
   const deleteTodo = id => {
     const options = {
       method: 'DELETE',
-      url: http://localhost:8000/api/todo/${id}, // Fixed template literal
+      url: 'http://localhost:8000/api/todo/${id}', // Fixed template literal
       headers: {
         accept: 'application/json',
       },
@@ -84,7 +84,7 @@ export function TODO(props) {
     const todoToUpdate = todoData.find(todo => todo._id === id);
     const options = {
       method: 'PATCH',
-      url: http://localhost:8000/api/todo/${id}, // Fixed template literal
+      url: 'http://localhost:8000/api/todo/${id}', // Fixed template literal
       headers: {
         accept: 'application/json',
       },
@@ -106,7 +106,7 @@ export function TODO(props) {
   const saveEditTodo = id => {
     const options = {
       method: 'PATCH',
-      url: http://localhost:8000/api/todo/${id}, // Fixed template literal
+      url: 'http://localhost:8000/api/todo/${id}', // Fixed template literal
       headers: {
         accept: 'application/json',
       },
